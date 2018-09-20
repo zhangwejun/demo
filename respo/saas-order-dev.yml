@@ -3,11 +3,6 @@ server:
   tomcat:
     uri-encoding: UTF-8
 spring:
-  cloud:
-    bus:
-      enabled: true
-      trace:
-        enabled: true
   datasource:
     url: jdbc:mysql://127.0.0.1:3308/demo?useUnicode=true&characterEncoding=utf8&useSSL=false&tinyInt1isBit=true
     username: root
