@@ -2,4 +2,4 @@ server:
   port: 8083
   tomcat:
     uri-encoding: UTF-8
-foo: BUS 测试4
+foo: BUS 测试5
