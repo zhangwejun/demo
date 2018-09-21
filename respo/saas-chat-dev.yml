@@ -1,7 +1,7 @@
 #公共配置
 server:
   #端口
-  port: 8080
+  port: 8083
   tomcat:
     uri-encoding: UTF-8
 spring:
