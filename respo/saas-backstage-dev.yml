@@ -1,7 +1,7 @@
 #公共配置
 server:
   #端口
-  port: 8881
+  port: 8081
   tomcat:
     uri-encoding: UTF-8
 spring:
@@ -34,11 +34,7 @@ spring:
       filters: stat,wall,logback
       # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
       connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
-  cloud:
-    bus:
-      enabled: true
-      trace:
-        enabled: true
+
  
 
   redis:
@@ -62,8 +58,8 @@ spring:
   rabbitmq:
     host: 127.0.0.1
     port: 5672
-    username: guest
-    password: guest
+    username: admin
+    password: admin
     
     
 ########################### queue 配置 ##########################
@@ -91,7 +87,7 @@ trade:
 #mybatis
 mybatis:
   # 实体类扫描
-  type-aliases-package: com.ughen.saas.entity
+#  type-aliases-package: com.ughen.saas.entity
   # 配置映射文件位置
   mapper-locations: classpath:mapper/*.xml
   # 开启驼峰匹配
@@ -104,11 +100,7 @@ api:
     version: v1.0
     basePackage: com.ughen.saas.backstage
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+
 
 
 
