@@ -1,0 +1,10 @@
+
+#公共配置
+server:
+  #端口
+  port: 8881
+  tomcat:
+    uri-encoding: UTF-8
+    
+    
+foo : 测试
