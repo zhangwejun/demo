@@ -7,7 +7,7 @@ server:
 spring:
   #连接池配置
   datasource:
-    url: jdbc:mysql://127.0.0.1:3308/demo?useUnicode=true&characterEncoding=utf8&useSSL=false&tinyInt1isBit=true
+    url: jdbc:mysql://127.0.0.1:3308/demo?serverTimezone=Shanghai&?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -34,7 +34,6 @@ spring:
       filters: stat,wall,logback
       # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
       connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
-
  
 
   redis:
