@@ -26,21 +26,4 @@ spring:
     port: 5672
     username: guest
     password: guest
-    
-    
-########################### queue 配置 ##########################
- 
-mq:
-  env: test
-register:
-  exchange:
-    name: ${mq.env}.user.register.exchange
-  delay:
-    queue:
-      name: ${mq.env}.user.register.delay.queue
-    exchange:
-     name: ${mq.env}.user.register.delay.exchange
-  queue:
-    name: ${mq.env}.user.register.queue
- 
  
